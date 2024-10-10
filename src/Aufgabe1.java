@@ -1,61 +1,61 @@
 public class Aufgabe1 {
     //1
-    public static int[] NichtAusreichend(int[] noten){
+    public static int[] NoteInsuficiente(int[] note){
         //numaram notele<40
         int counter=0;
-        for(int note:noten){
-            if(note<40){
+        for(int nota:note){
+            if(nota<40){
                 counter++;
             }
         }
         //creeam un array cu notele insuficiente
-        int[] nichtausreichend=new int[counter];
+        int[] n_insuficiente=new int[counter];
         int idx=0;
-        for(int note:noten){
-            if(note<40){
-                nichtausreichend[idx++]=note;
+        for(int nota:note){
+            if(nota<40){
+                n_insuficiente[idx++]=nota;
             }
         }
-        return nichtausreichend;
+        return n_insuficiente;
     }
 
     //2
-    public static double Durchschnittwert(int[] noten){
+    public static double ValoareMedie(int[] note){
         int sum=0;
-        for(int note:noten){
-            sum+=note;
+        for(int nota:note){
+            sum+=nota;
         }
-        return Math.round((double)sum/noten.length*100)/100; //calcul+rotunjire 2 decimale
+        return Math.round((double)sum/note.length*100.0)/100.0; //calcul+rotunjire 2 decimale
     }
 
     //3
-    public static int[] AbgerundeteNoten(int[] noten){
-        int[] abgerundet=new int[noten.length];
-        for(int i=0;i<noten.length;i++){
-            abgerundet[i]=RundeNote(noten[i]);
+    public static int[] NoteRotunjite(int[] note){
+        int[] n_rotunjite=new int[note.length];
+        for(int i=0;i<note.length;i++){
+            n_rotunjite[i]=Rotunjire(note[i]);
         }
-        return abgerundet;
+        return n_rotunjite;
 
     }
 
-    public static int RundeNote(int note){ //metoda aux
-        if(note<38){
-            return note;
+    public static int Rotunjire(int nota){ //metoda aux
+        if(nota<38){
+            return nota;
         }
-        int diff=5-(note%5);
+        int diff=5-(nota%5);
         if(diff<3){
-            return note+diff;  //rotunjim la urm. multiplu de 5
+            return nota+diff;  //rotunjim la urm. multiplu de 5
         }
-        return note;
+        return nota;
     }
 
     //4
-    public static int MaximalAbgerundeteNote(int [] noten){
+    public static int NotaMaximaRotunjita(int [] note){
         int max=0;
-        int[] abgerundet=AbgerundeteNoten(noten);
-        for(int note: abgerundet){
-            if(note>max){
-                max=note;
+        int[] n_rotunjite=NoteRotunjite(note);
+        for(int nota: n_rotunjite){
+            if(nota>max){
+                max=nota;
             }
         }
         return max;

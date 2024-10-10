@@ -23,7 +23,7 @@ public class Aufgabe2 {
     }
 
     //3
-    public static int maximalSumme(int[] array){
+    public static int suma_maxima(int[] array){
         int min=minim(array);
         int sum=0;
         for(int i=0;i<array.length;i++){
@@ -34,7 +34,7 @@ public class Aufgabe2 {
     }
 
     //4
-    public static int minimalSumme(int[] array){
+    public static int suma_minima(int[] array){
         int max=maxim(array);
         int sum=0;
         for(int i=0;i<array.length;i++){
