@@ -1,6 +1,6 @@
 public class Aufgabe1 {
     //1
-    public static int[] NoteInsuficiente(int[] note){
+    public int[] NoteInsuficiente(int[] note){
         //numaram notele<40
         int counter=0;
         for(int nota:note){
@@ -20,7 +20,7 @@ public class Aufgabe1 {
     }
 
     //2
-    public static double ValoareMedie(int[] note){
+    public double ValoareMedie(int[] note){
         int sum=0;
         for(int nota:note){
             sum+=nota;
@@ -29,7 +29,7 @@ public class Aufgabe1 {
     }
 
     //3
-    public static int[] NoteRotunjite(int[] note){
+    public int[] NoteRotunjite(int[] note){
         int[] n_rotunjite=new int[note.length];
         for(int i=0;i<note.length;i++){
             n_rotunjite[i]=Rotunjire(note[i]);
@@ -38,7 +38,7 @@ public class Aufgabe1 {
 
     }
 
-    public static int Rotunjire(int nota){ //metoda aux
+    public  int Rotunjire(int nota){ //metoda aux
         if(nota<38){
             return nota;
         }
@@ -50,7 +50,7 @@ public class Aufgabe1 {
     }
 
     //4
-    public static int NotaMaximaRotunjita(int [] note){
+    public  int NotaMaximaRotunjita(int [] note){
         int max=0;
         int[] n_rotunjite=NoteRotunjite(note);
         for(int nota: n_rotunjite){

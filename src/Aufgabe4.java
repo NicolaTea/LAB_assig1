@@ -1,6 +1,6 @@
 public class Aufgabe4 {
         //1
-        public static int tastatura_ieftina(int[] tastaturi){
+        public  int tastatura_ieftina(int[] tastaturi){
             int min=tastaturi[0];
             for(int tastatura:tastaturi){
                 if(tastatura<min){
@@ -11,7 +11,7 @@ public class Aufgabe4 {
         }
 
         //2
-        public static int electro_scump(int [] tastaturi, int[] usbs){
+        public  int gagdet_scump(int [] tastaturi, int[] usbs){
             int max=tastaturi[0];
             for(int tastatura: tastaturi){
                 if(tastatura>max){
@@ -27,7 +27,7 @@ public class Aufgabe4 {
         }
 
         //3
-        public static int usb_scump(int usbs[], int buget){
+        public  int usb_scump(int usbs[], int buget){
             int max=-1;
             for(int usb: usbs){
                 if(usb<=buget && usb>max){
@@ -38,7 +38,7 @@ public class Aufgabe4 {
         }
 
         //4
-        public static int suma_maxima_bani(int buget,int[] tastaturi, int[] usbs){
+        public int suma_maxima_buget(int buget,int[] tastaturi, int[] usbs){
             int max=-1;
             for(int tastatura:tastaturi){
                 for(int usb:usbs){

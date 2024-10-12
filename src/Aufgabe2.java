@@ -1,6 +1,6 @@
 public class Aufgabe2 {
     //1
-    public static int maxim(int[] array){
+    public  int maxim(int[] array){
         int max=array[0];
         for(int i=0;i<array.length;i++){
             if(array[i]>max){
@@ -12,7 +12,7 @@ public class Aufgabe2 {
     }
 
     //2
-    public static int minim(int[] array){
+    public  int minim(int[] array){
         int min=array[0];
         for(int i=0;i<array.length;i++){
             if(array[i]<min){
@@ -23,7 +23,7 @@ public class Aufgabe2 {
     }
 
     //3
-    public static int suma_maxima(int[] array){
+    public int suma_maxima(int[] array){
         int min=minim(array);
         int sum=0;
         for(int i=0;i<array.length;i++){
@@ -34,7 +34,7 @@ public class Aufgabe2 {
     }
 
     //4
-    public static int suma_minima(int[] array){
+    public  int suma_minima(int[] array){
         int max=maxim(array);
         int sum=0;
         for(int i=0;i<array.length;i++){
