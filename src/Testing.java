@@ -45,5 +45,24 @@ public class Testing {
             System.out.println("Suma minima: "+min_sum);
 
             System.out.println("-----------------------------------------------");
+
+            //auf4
+            //1
+            int[] tastaturi={40,35,70,15,45};
+            System.out.println("Tastatura ieftina: "+Aufgabe4.tastatura_ieftina(tastaturi));
+            //2
+            int[] tast2={15,20,10,35};
+            int[] usbs2={20,15,40,15};
+            System.out.println("Electro scump: "+Aufgabe4.electro_scump(tast2,usbs2));
+            //3
+            int[] usbs3={15,45,20};
+            int buget=30;
+            System.out.println("Usb scump incadrat in buget: "+Aufgabe4.usb_scump(usbs3,buget));
+            //4
+            int b=60;
+            int[] tast4={40,50,60};
+            int [] usbs4={8,12};
+            System.out.println("Suma maxima de bani cheltuiti incadrati in buget: "+Aufgabe4.suma_maxima_bani(b,tast4,usbs4));
+
     }
 }
