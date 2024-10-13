@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Aufgabe1
+
         Scanner scanner=new Scanner(System.in);
         System.out.print("Introduceti numarul de note: ");
         int n=scanner.nextInt();
@@ -11,24 +12,32 @@ public class Main {
             note[i]=scanner.nextInt();
         }
         Aufgabe1 sistem_notare=new Aufgabe1();
+
         //1
+
         int[] noteInsuficiente=sistem_notare.NoteInsuficiente(note);
         System.out.print("Note insuficiente: ");
         for (int nota : noteInsuficiente) {
             System.out.print(nota + " ");
         }
         System.out.println();
+
         //2
+
         double medie=sistem_notare.ValoareMedie(note);
         System.out.println("Media: "+ medie);
+
         //3
+
         int[] rotunjite = sistem_notare.NoteRotunjite(note);
         System.out.print("Note rotunjite: ");
         for (int nota : rotunjite) {
             System.out.print(nota + " ");
         }
         System.out.println();
+
         //4
+
         int maxRotunjit = sistem_notare.NotaMaximaRotunjita(note);
         System.out.println("Nota maxima rotunjita: " + maxRotunjit);
 
@@ -36,6 +45,7 @@ public class Main {
 
 
         //Aufgabe2
+
         System.out.print("Introduceti numarul de elemente: ");
         int m=scanner.nextInt();
         int[] elem=new int[m];
@@ -44,6 +54,7 @@ public class Main {
             elem[i]=scanner.nextInt();
         }
         Aufgabe2 operations=new Aufgabe2();
+
         //1
         System.out.println("Valoarea maxima: "+operations.maxim(elem));
         //2
@@ -57,6 +68,7 @@ public class Main {
 
 
         //Aufgabe3
+
         System.out.print("Introduceti numarul de elemente: ");
         int k=scanner.nextInt();
         int[] num1=new int[k];
@@ -70,28 +82,36 @@ public class Main {
             num2[i]=scanner.nextInt();
         }
         Aufgabe3 op=new Aufgabe3();
+
         //1
+
         int[] sum_result=op.suma(num1,num2);
         System.out.print("Suma: ");
         for(int nr:sum_result){
             System.out.print(nr);
         }
         System.out.println();
+
         //2
+
         int[] sub_result=op.diferenta(num1,num2);
         System.out.print("Diff: ");
         for(int nr: sub_result){
             System.out.print(nr);
         }
         System.out.println();
+
         //3
+
         int[] mul_result= op.mul(num1,2);
         System.out.print("Mul: ");
         for(int nr:mul_result){
             System.out.print(nr);
         }
         System.out.println();
+
         //4
+
         int[] div_result= op.div(num2,2);
         System.out.print("Div: ");
         for(int nr:div_result){
@@ -119,6 +139,7 @@ public class Main {
         System.out.print("Introduceti un buget: ");
         int buget=scanner.nextInt();
         Aufgabe4 op_gadget=new Aufgabe4();
+
         //1
         System.out.println("Tastatura ieftina: "+op_gadget.tastatura_ieftina(tastaturi));
         //2
