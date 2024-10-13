@@ -25,7 +25,7 @@ public class Aufgabe1 {
         for(int nota:note){
             sum+=nota;
         }
-        return Math.round((double)sum/note.length*100.0)/100.0; //calcul+rotunjire 2 decimale
+        return (double) sum/note.length;
     }
 
     //3

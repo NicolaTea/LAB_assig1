@@ -55,14 +55,34 @@ public class Testing {
             //1
             int[] num1={1,3,0,0,0,0,0,0,0};
             int[]num2={8,7,0,0,0,0,0,0,0};
-            int[] result_1=op.suma(num1,num2);
-            System.out.println("Suma: "+ Arrays.toString(result_1));
+            int[] sum_result=op.suma(num1,num2);
+            System.out.print("Suma: ");
+            for(int n:sum_result){
+                    System.out.print(n);
+            }
+            System.out.println();
             //2
-            int[] result_2=op.diferenta(num1,num2);
-            System.out.println("Diff: "+Arrays.toString(result_2));
+            int[] sub_result=op.diferenta(num1,num2);
+            System.out.print("Diff: ");
+            for(int n: sub_result){
+                    System.out.print(n);
+            }
+            System.out.println();
             //3
+            int[] num3={2,3,6,0,0,0,0,0,0};
+            int[] mul_result= op.mul(num3,2);
+            System.out.print("Mul: ");
+            for(int n:mul_result){
+                    System.out.print(n);
+            }
+            System.out.println();
             //4
-
+            int[] div_result= op.div(num3,2);
+            System.out.print("Div: ");
+            for(int n:div_result){
+                    System.out.print(n);
+            }
+            System.out.println();
             System.out.println("-----------------------------------------------");
 
             //auf4
