@@ -34,6 +34,9 @@ public class Aufgabe3 {
         int carry=0;
         int[] result=new int[number.length];
 
+        boolean is_negativ=(cf<0);
+        cf=Math.abs(cf);
+
         //parcurgere de la dreapta la stanga
         for(int i=number.length-1;i>=0;i--){
             int produs=number[i]*cf+carry;
@@ -50,6 +53,11 @@ public class Aufgabe3 {
             }
             return extensie_result;
         }
+
+        if(is_negativ){
+            result[0]=-result[0];
+        }
+
         return result;
     }
 
@@ -57,6 +65,9 @@ public class Aufgabe3 {
     public int[] div(int[] number,int cf){
         int remainder=0;
         int[] result=new int[number.length];
+
+        boolean is_negativ=(cf<0);
+        cf=Math.abs(cf);
 
         //parcurgem fiecare cifra a nr
         for(int i=0;i<number.length;i++){
@@ -74,6 +85,11 @@ public class Aufgabe3 {
         for(int i=0;i<final_result.length;i++){
             final_result[i]=result[leading_zero+i];
         }
+
+        if(is_negativ&&final_result.length>0){
+            final_result[0]=-final_result[0];
+        }
+
         return final_result;
 
     }

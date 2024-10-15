@@ -76,8 +76,10 @@ public class Main {
                     int length=scanner.nextInt();
                     int[] num1=citire_input(length);
                     int[] num2=citire_input(length);
-                    System.out.print("Introdu o cifra: ");
-                    int digit=scanner.nextInt();
+                    System.out.print("Introdu o cifra pt mul: ");
+                    int digit1=scanner.nextInt();
+                    System.out.print("Introdu o cifra pt div: ");
+                    int digit2=scanner.nextInt();
                     Aufgabe3 op=new Aufgabe3();
 
                     //1
@@ -97,7 +99,7 @@ public class Main {
                     System.out.println();
 
                     //3
-                    int[] mul_result= op.mul(num1,digit);
+                    int[] mul_result= op.mul(num1,digit1);
                     System.out.print("Mul: ");
                     for(int nr:mul_result){
                         System.out.print(nr);
@@ -105,7 +107,7 @@ public class Main {
                     System.out.println();
 
                     //4
-                    int[] div_result= op.div(num2,digit);
+                    int[] div_result= op.div(num2,digit2);
                     System.out.print("Div: ");
                     for(int nr:div_result){
                         System.out.print(nr);
