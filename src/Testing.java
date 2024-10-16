@@ -53,36 +53,23 @@ public class Testing {
             //auf3
             Aufgabe3 op=new Aufgabe3();
             //1
-            int[] num1={1,3,0,0,0,0,0,0,0};
-            int[]num2={8,7,0,0,0,0,0,0,0};
+            int[] num1={1,3,0};
+            int[]num2={8,7,0};
             int[] sum_result=op.suma(num1,num2);
-            System.out.print("Suma: ");
-            for(int n:sum_result){
-                    System.out.print(n);
-            }
-            System.out.println();
+            System.out.println("Suma: "+Arrays.toString(sum_result));
+
             //2
             int[] sub_result=op.diferenta(num1,num2);
-            System.out.print("Diff: ");
-            for(int n: sub_result){
-                    System.out.print(n);
-            }
-            System.out.println();
+            System.out.println("Diff: "+Arrays.toString(sub_result));
+
             //3
             int[] num3={2,3,6,0,0,0,0,0,0};
-            int[] mul_result= op.mul(num3,2);
-            System.out.print("Mul: ");
-            for(int n:mul_result){
-                    System.out.print(n);
-            }
-            System.out.println();
+            int[] mul_result= op.mul(num3,-2);
+            System.out.println("Mul: "+Arrays.toString(mul_result));
+
             //4
-            int[] div_result= op.div(num3,2);
-            System.out.print("Div: ");
-            for(int n:div_result){
-                    System.out.print(n);
-            }
-            System.out.println();
+            int[] div_result= op.div(num3,-2);
+            System.out.println("Div: "+Arrays.toString(div_result));
             System.out.println("-----------------------------------------------");
 
             //auf4
